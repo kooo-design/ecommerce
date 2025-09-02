@@ -694,83 +694,186 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .header .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .newsletter-flex {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .newsletter-flex h2 {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr;
+    gap: 30px;
     text-align: center;
   }
-
   .hero-text h1 {
-    font-size: 36px;
+    font-size: 28px;
+    margin-bottom: 20px;
   }
-
+  .hero-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .cta-btn {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
   .stats {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .header .container {
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
+    align-items: center;
   }
-
-  .nav ul {
-    gap: 15px;
+  .brands {
+    padding: 10px 0;
   }
-
-  .search-bar {
-    width: 100%;
+  .brand-logos {
+    gap: 20px;
   }
-
   .products-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .product-card img {
+    height: 180px;
   }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 20px;
+  .new-arrivals h2,
+  .top-selling h2,
+  .browse-style h2,
+  .reviews h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
   }
-
   .style-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
     height: auto;
+    gap: 15px;
   }
-
   .style-card {
-    height: 200px;
+    height: 160px;
   }
-
+  .style-card h3 {
+    font-size: 22px;
+    left: 18px;
+    top: 12px;
+  }
   .reviews-slider {
     flex-direction: column;
+    gap: 15px;
   }
-
   .review-card {
-    min-width: auto;
+    min-width: 90vw;
+    padding: 18px 10px;
+  }
+  .newsletter {
+    padding: 40px 0;
+    margin: 0 5px;
+  }
+  .newsletter-form {
+    max-width: 100%;
+  }
+  .input-group {
+    padding: 10px 10px;
+  }
+  .footer {
+    padding: 40px 0 20px;
+    margin-top: 40px;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .footer-section h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .footer-section p {
+    margin-bottom: 15px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .new-arrivals h2,
-  .top-selling h2,
-  .browse-style h2 {
-    font-size: 32px;
-  }
-
-  .newsletter h2 {
-    font-size: 28px;
-  }
-
   .container {
-    padding: 0 15px;
+    padding: 0 5px;
+  }
+  .hero-text h1 {
+    font-size: 20px;
+  }
+  .cta-btn,
+  .view-all-btn,
+  .subscribe-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+  .product-card img {
+    height: 120px;
+  }
+  .style-card {
+    height: 100px;
+  }
+  .style-card h3 {
+    font-size: 14px;
+    left: 10px;
+    top: 6px;
+  }
+  .newsletter h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .newsletter {
+    padding: 20px 0;
+    margin: 0 2px;
+    border-radius: 10px;
+  }
+  .input-group {
+    padding: 6px 6px;
+  }
+  .footer {
+    padding: 20px 0 10px;
+    margin-top: 20px;
+  }
+  .footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .footer-section h4 {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+  .footer-section p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+    gap: 5px;
   }
 }
